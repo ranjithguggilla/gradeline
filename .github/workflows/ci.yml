@@ -1,0 +1,44 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pip install -e . --no-deps
+      - name: Lint
+        run: ruff check src tests
+      - name: Tests
+        run: pytest -q --cov=gradeline
+
+  train:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pip install -e . --no-deps
+      - name: Train and evaluate
+        run: python -m gradeline.pipeline --out outputs --assets assets
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gradeline-model
+          path: |
+            outputs/gradeline_model.joblib
+            outputs/metrics.json
+            assets/*.png
