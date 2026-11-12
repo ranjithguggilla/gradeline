@@ -1,0 +1,398 @@
+{
+  "version": "0.1.0",
+  "rows": {
+    "raw": 6497,
+    "deduped": 5320,
+    "train": 3192,
+    "val": 1064,
+    "test": 1064
+  },
+  "low_tier_rate": 0.3731203007518797,
+  "shipped": "boosted_cumulative",
+  "cv": {
+    "mode_only": {
+      "qwk_mean": 0.0,
+      "qwk_se": 0.0,
+      "mae_mean": 0.6365912647602788,
+      "rps_mean": 0.11454331351772211
+    },
+    "alcohol_cutpoints": {
+      "qwk_mean": 0.4470071206410571,
+      "qwk_se": 0.00628060458784197,
+      "mae_mean": 0.5983671914220724,
+      "rps_mean": null
+    },
+    "ordinal_logit": {
+      "qwk_mean": 0.45978104805857606,
+      "qwk_se": 0.006133934672943102,
+      "mae_mean": 0.5064756354217258,
+      "rps_mean": 0.088068762228651
+    },
+    "multinomial_logit": {
+      "qwk_mean": 0.4624048432471875,
+      "qwk_se": 0.003931477987967612,
+      "mae_mean": 0.500627776878384,
+      "rps_mean": 0.08764021584559208
+    },
+    "ridge_cutpoints": {
+      "qwk_mean": 0.5389314366930885,
+      "qwk_se": 0.0067268751824756,
+      "mae_mean": 0.5670447391185613,
+      "rps_mean": null
+    },
+    "boosted_multiclass": {
+      "qwk_mean": 0.4708642467399676,
+      "qwk_se": 0.0065033061252245,
+      "mae_mean": 0.5057446735445764,
+      "rps_mean": 0.08778039218945025
+    },
+    "boosted_cumulative": {
+      "qwk_mean": 0.5039605013097409,
+      "qwk_se": 0.005071443884164278,
+      "mae_mean": 0.48162113281103086,
+      "rps_mean": 0.08714612570563167
+    },
+    "boosted_cutpoints": {
+      "qwk_mean": 0.5588235566830871,
+      "qwk_se": 0.004273461363040998,
+      "mae_mean": 0.5575505745491175,
+      "rps_mean": null
+    }
+  },
+  "validation": {
+    "mode_only": {
+      "qwk": 0.0,
+      "mae": 0.6372180451127819,
+      "exact": 0.43609022556390975,
+      "within1": 0.9266917293233082
+    },
+    "alcohol_cutpoints": {
+      "qwk": 0.46570211737698963,
+      "mae": 0.5921052631578947,
+      "exact": 0.4793233082706767,
+      "within1": 0.9360902255639098
+    },
+    "ordinal_logit": {
+      "qwk": 0.4816822797570751,
+      "mae": 0.5037593984962406,
+      "exact": 0.5404135338345865,
+      "within1": 0.9577067669172933
+    },
+    "multinomial_logit": {
+      "qwk": 0.47360601293480165,
+      "mae": 0.5,
+      "exact": 0.5460526315789473,
+      "within1": 0.9558270676691729
+    },
+    "ridge_cutpoints": {
+      "qwk": 0.5207657162272114,
+      "mae": 0.5958646616541353,
+      "exact": 0.4774436090225564,
+      "within1": 0.9342105263157895
+    },
+    "boosted_multiclass": {
+      "qwk": 0.4775515500401075,
+      "mae": 0.5131578947368421,
+      "exact": 0.5413533834586466,
+      "within1": 0.9473684210526315
+    },
+    "boosted_cumulative": {
+      "qwk": 0.5022467147096228,
+      "mae": 0.4981203007518797,
+      "exact": 0.5413533834586466,
+      "within1": 0.9624060150375939
+    },
+    "boosted_cutpoints": {
+      "qwk": 0.5754938437700066,
+      "mae": 0.543233082706767,
+      "exact": 0.5056390977443609,
+      "within1": 0.9539473684210527
+    }
+  },
+  "test": {
+    "mode_only": {
+      "qwk": 0.0,
+      "mae": 0.6353383458646616,
+      "exact": 0.43703007518796994,
+      "within1": 0.9276315789473685
+    },
+    "alcohol_cutpoints": {
+      "qwk": 0.44134686152875613,
+      "mae": 0.6043233082706767,
+      "exact": 0.4633458646616541,
+      "within1": 0.9379699248120301
+    },
+    "ordinal_logit": {
+      "qwk": 0.4945108350259816,
+      "mae": 0.4924812030075188,
+      "exact": 0.5460526315789473,
+      "within1": 0.9633458646616542
+    },
+    "multinomial_logit": {
+      "qwk": 0.5013399428794303,
+      "mae": 0.4793233082706767,
+      "exact": 0.5592105263157895,
+      "within1": 0.9633458646616542
+    },
+    "ridge_cutpoints": {
+      "qwk": 0.5526693333079971,
+      "mae": 0.5488721804511278,
+      "exact": 0.5046992481203008,
+      "within1": 0.9511278195488722
+    },
+    "boosted_multiclass": {
+      "qwk": 0.5362172062051984,
+      "mae": 0.46522556390977443,
+      "exact": 0.5723684210526315,
+      "within1": 0.9624060150375939
+    },
+    "boosted_cumulative": {
+      "qwk": 0.5308758507625814,
+      "mae": 0.462406015037594,
+      "exact": 0.5723684210526315,
+      "within1": 0.9661654135338346
+    },
+    "boosted_cutpoints": {
+      "qwk": 0.6124472398474228,
+      "mae": 0.506578947368421,
+      "exact": 0.5338345864661654,
+      "within1": 0.9624060150375939
+    }
+  },
+  "test_shipped_ci": {
+    "qwk": [
+      0.4878257066160395,
+      0.5720295811700584
+    ],
+    "mae": [
+      0.43045112781954886,
+      0.49718045112781956
+    ]
+  },
+  "test_rps": 0.08144927143728996,
+  "alpha_model_vs_panel": 0.5563101541561226,
+  "decoding": {
+    "argmax": {
+      "qwk": 0.5182435196996318,
+      "mae": 0.4718045112781955,
+      "exact": 0.5733082706766918,
+      "within1": 0.956766917293233
+    },
+    "median": {
+      "qwk": 0.5308758507625814,
+      "mae": 0.462406015037594,
+      "exact": 0.5723684210526315,
+      "within1": 0.9661654135338346
+    },
+    "rounded_expectation": {
+      "qwk": 0.5402294484120954,
+      "mae": 0.45112781954887216,
+      "exact": 0.5789473684210527,
+      "within1": 0.9708646616541353
+    }
+  },
+  "mcnemar_vs_multinomial": {
+    "chi2": 1.0180722891566265,
+    "p": 0.31297670436323055,
+    "table": [
+      [
+        519,
+        90
+      ],
+      [
+        76,
+        379
+      ]
+    ]
+  },
+  "friedman": {
+    "stat": 93.84444444444449,
+    "p": 2.0047528663690554e-17
+  },
+  "nemenyi_p": {
+    "mode_only": {
+      "mode_only": 1.0,
+      "alcohol_cutpoints": 0.576299303055116,
+      "ordinal_logit": 0.10584444145242178,
+      "multinomial_logit": 0.037098136771094414,
+      "ridge_cutpoints": 1.163042995244723e-10,
+      "boosted_multiclass": 0.010859747018273747,
+      "boosted_cumulative": 9.67000506224558e-07,
+      "boosted_cutpoints": 8.124612094206896e-13
+    },
+    "alcohol_cutpoints": {
+      "mode_only": 0.576299303055116,
+      "alcohol_cutpoints": 1.0,
+      "ordinal_logit": 0.9866451006680487,
+      "multinomial_logit": 0.9109961207116429,
+      "ridge_cutpoints": 1.106928349592362e-05,
+      "boosted_multiclass": 0.7260279690898255,
+      "boosted_cumulative": 0.006335343290783779,
+      "boosted_cutpoints": 2.652221500198948e-07
+    },
+    "ordinal_logit": {
+      "mode_only": 0.10584444145242178,
+      "alcohol_cutpoints": 0.9866451006680487,
+      "ordinal_logit": 1.0,
+      "multinomial_logit": 0.9999535404209698,
+      "ridge_cutpoints": 0.0007853491053647632,
+      "boosted_multiclass": 0.9955807830161854,
+      "boosted_cumulative": 0.10584444145242178,
+      "boosted_cutpoints": 3.472364301160269e-05
+    },
+    "multinomial_logit": {
+      "mode_only": 0.037098136771094414,
+      "alcohol_cutpoints": 0.9109961207116429,
+      "ordinal_logit": 0.9999535404209698,
+      "multinomial_logit": 1.0,
+      "ridge_cutpoints": 0.0036007344790184304,
+      "boosted_multiclass": 0.9999535404209698,
+      "boosted_cumulative": 0.24851050545180042,
+      "boosted_cutpoints": 0.00020821389540326418
+    },
+    "ridge_cutpoints": {
+      "mode_only": 1.163042995244723e-10,
+      "alcohol_cutpoints": 1.106928349592362e-05,
+      "ordinal_logit": 0.0007853491053647632,
+      "multinomial_logit": 0.0036007344790184304,
+      "ridge_cutpoints": 1.0,
+      "boosted_multiclass": 0.014076810820404018,
+      "boosted_cumulative": 0.8501370958942382,
+      "boosted_cutpoints": 0.9977229771912807
+    },
+    "boosted_multiclass": {
+      "mode_only": 0.010859747018273747,
+      "alcohol_cutpoints": 0.7260279690898255,
+      "ordinal_logit": 0.9955807830161854,
+      "multinomial_logit": 0.9999535404209698,
+      "ridge_cutpoints": 0.014076810820404018,
+      "boosted_multiclass": 1.0,
+      "boosted_cumulative": 0.47326698070001594,
+      "boosted_cutpoints": 0.0010781667534214279
+    },
+    "boosted_cumulative": {
+      "mode_only": 9.67000506224558e-07,
+      "alcohol_cutpoints": 0.006335343290783779,
+      "ordinal_logit": 0.10584444145242178,
+      "multinomial_logit": 0.24851050545180042,
+      "ridge_cutpoints": 0.8501370958942382,
+      "boosted_multiclass": 0.47326698070001594,
+      "boosted_cumulative": 1.0,
+      "boosted_cutpoints": 0.423310541276422
+    },
+    "boosted_cutpoints": {
+      "mode_only": 8.124612094206896e-13,
+      "alcohol_cutpoints": 2.652221500198948e-07,
+      "ordinal_logit": 3.472364301160269e-05,
+      "multinomial_logit": 0.00020821389540326418,
+      "ridge_cutpoints": 0.9977229771912807,
+      "boosted_multiclass": 0.0010781667534214279,
+      "boosted_cumulative": 0.423310541276422,
+      "boosted_cutpoints": 1.0
+    }
+  },
+  "calibration": {
+    "val_ece_raw": 0.04317543500598255,
+    "val_ece_isotonic": 0.049731532846625154,
+    "test_ece_raw": 0.020017092563063544,
+    "test_ece_isotonic": 0.029991852573831416,
+    "shipped": "raw"
+  },
+  "triage": {
+    "assumptions": {
+      "review": 100.0,
+      "missed_low": 400.0,
+      "break_even_probability": 0.25
+    },
+    "threshold_val_tuned": 0.29000000000000004,
+    "review_share": 0.5122180451127819,
+    "cost_total": {
+      "review_none": 158800.0,
+      "review_all": 106400.0,
+      "model_break_even": 81900.0,
+      "model_val_tuned": 81700.0,
+      "hindsight": 39700.0,
+      "random_same_share": 132088.0,
+      "alcohol_same_share": 98500.0
+    },
+    "cost_per_lot": {
+      "review_none": 149.24812030075188,
+      "review_all": 100.0,
+      "model_break_even": 76.97368421052632,
+      "model_val_tuned": 76.78571428571429,
+      "hindsight": 37.31203007518797,
+      "random_same_share": 124.14285714285714,
+      "alcohol_same_share": 92.57518796992481
+    },
+    "saving_vs_review_all_per_lot": 23.214285714285715,
+    "saving_ci": [
+      17.763157894736842,
+      28.665413533834588
+    ],
+    "low_found_share": 0.8287153652392947,
+    "budget_recall_20": {
+      "model": 0.4282115869017632,
+      "alcohol": 0.33753148614609574,
+      "random": 0.2
+    },
+    "ratio_sweep": {
+      "0.1": {
+        "model": 34.58646616541353,
+        "review_all": 40.0,
+        "review_none": 149.24812030075188
+      },
+      "0.2": {
+        "model": 61.8796992481203,
+        "review_all": 80.0,
+        "review_none": 149.24812030075188
+      },
+      "0.25": {
+        "model": 76.97368421052632,
+        "review_all": 100.0,
+        "review_none": 149.24812030075188
+      },
+      "0.4": {
+        "model": 105.33834586466165,
+        "review_all": 160.0,
+        "review_none": 149.24812030075188
+      },
+      "0.6": {
+        "model": 131.72932330827066,
+        "review_all": 240.0,
+        "review_none": 149.24812030075188
+      },
+      "0.8": {
+        "model": 147.3684210526316,
+        "review_all": 320.0,
+        "review_none": 149.24812030075188
+      }
+    }
+  },
+  "leakage": {
+    "raw_random": 0.5715933608374293,
+    "deduped_random": 0.5083519027321852,
+    "raw_share_duplicated": 0.18116053563183007
+  },
+  "colour": {
+    "pooled": 0.5317062655035771,
+    "red_pooled_model": 0.5562734022973916,
+    "red_own_model": 0.5987431942452753,
+    "white_pooled_model": 0.5134520606174835,
+    "white_own_model": 0.5119691972668886,
+    "white_to_red_transfer": 0.15348651733922147
+  },
+  "permutation_importance_qwk": {
+    "alcohol": 0.23698586314720965,
+    "volatile_acidity": 0.08422697809662105,
+    "free_sulfur_dioxide": 0.0637004640423245,
+    "chlorides": 0.04533500975228415,
+    "total_sulfur_dioxide": 0.03311041271344521,
+    "density": 0.024215931857268246,
+    "sulphates": 0.020588750825381454,
+    "citric_acid": 0.013722084544083569,
+    "residual_sugar": 0.0016691829159260151,
+    "fixed_acidity": 0.00024615157654976904,
+    "pH": -0.0010977199012225602,
+    "is_red": -0.0025736864675940164
+  }
+}
