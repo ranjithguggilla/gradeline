@@ -7,7 +7,7 @@ name = "gradeline"
 version = "0.1.0"
 description = "Ordinal quality grading and tasting-panel triage for wine lots"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "Ranjith Guggilla" }]
 dependencies = [

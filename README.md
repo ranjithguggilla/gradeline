@@ -129,7 +129,7 @@ pip install -r requirements.txt
 pip install -e . --no-deps
 ```
 
-Python 3.11 or newer. The pinned versions in `requirements.txt` are the ones the results above were produced with.
+Python 3.12 or newer. The pinned versions in `requirements.txt` are the ones the results above were produced with.
 
 ## Usage
 
